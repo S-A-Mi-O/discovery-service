@@ -1,0 +1,13 @@
+server:
+  port: 8761  # Port where the Eureka server will run
+
+eureka:
+  client:
+    register-with-eureka: false  # This tells Eureka server not to register itself as a client
+    fetch-registry: false        # Eureka server doesn't need to fetch the registry as it's the server
+  instance:
+    hostname: eureka-server  # Adjust as necessary for your setup
+
+spring:
+  application:
+    name: eureka-server  # Name of the Eureka service in your ecosystem
